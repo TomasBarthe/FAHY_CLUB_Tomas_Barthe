@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@400;500;600;900&display=swap" rel="stylesheet"> 
+    <title>Club Fahy Belgrano</title>
+    <link rel="icon" type="image/jpg" href="../imagenes/arpa icono.jpg">
+</head>
+<!--Cuerpo de la pagina-->
+
+<body> 
+    <header>
+        
+        
+        <p class="isologotop">Club Fahy 
+        <img src="../imagenes/index.jpg" alt="Escudo del club Fahy, un harpa dorada en un campo azul" id="escudo">
+        </p> 
+                
+        <p class="isologo">
+            Belgrano, Argentina
+        </p> 
+
+        
+        
+    </header> 
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li>
+                <a href="../index.html" class="itemMenu">Home</a>
+            </li>
+            <li>
+                <a href="socios.html"class="itemMenu" >Socios</a>
+            </li>
+            <li>
+                <a href="Visitas.html" class="itemMenu" >Visitas</a>
+            </li>
+            <li>
+                <a href="galeria.html" class="itemMenu"> Galeria</a>
+            </li>
+            <li>
+                <a href="contact.html" class="itemMenu"> Contacto</a>
+            </li>
+        </ul>
+    </nav>       
+
+        
+  <!--Al definir desde html la extension de los campos se me dificulto cumplir con 
+la premisa de un diseño responsive, o bien lo ajustaba para mobile o bien para escritorio  -->
+    
+<main>
+        <h2>Pedido de quincho y zonas recreativas</h2>
+        <form action="">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nombre">
+                <label for="Mail">Mail</label>
+                <input type="email" placeholder="su_mail@gmail.com" name="email" id="Mail">
+            
+                <label for="Pertenencia">Socio</label>
+                <input type="radio" name="Socio" id="Pertenencia">
+                <Label for="NO Pertenencia">No socio</Label>
+                <input type="radio" name="Socio" id="NO Pertenencia">
+            </fieldset>
+
+            <label for="descripcion"> 
+                <h2 >
+                    Describa el evento brevemente
+                </h2>
+                 
+            </label>
+                
+            <textarea name="Pedido de Quincho" placeholder=  "Ejemplo cumpleaños de mi hijo Tomas, 
+            para 20 amiguitos de 17 a 21hs." id="descripcion" cols="50" rows="10"> 
+            
+            </textarea>
+
+            <input type="reset" value="Borrar el formulario" class="botonesform" >
+
+            <input type="submit" value="Enviar la consulta" class="botonesform"> 
+
+                            
+            
+
+
+        </form>
+
+    
+            
+             
+
+        
+
+        
+
+        
+    </main>
+    
+
+    <footer>
+        <p class="textofooter">
+
+            Direccion: Avenida Congreso 2931 CABA - Belgrano  
+            <br>
+        
+            Tel 0011 45551071 -C.P. C1428BVU
+         </p>
+
+    </footer>
+
+</body>
+
+</html> 
+
+
