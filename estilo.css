@@ -58,15 +58,20 @@ header{
 
 }
 
+#escudo :hover{
+
+    transform: scale(2,3);
+}
+
 
 /* MOBILE mediaq*/
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 510px){
 
     
     header{
-    width: 100%;
-    height: 90px;
+        width: 100%;
+        height: 90px;
     }
 
     /* logo mobile */
@@ -74,32 +79,36 @@ header{
    
 
     .isologotop{
-    color: rgb(2, 110, 2); font-size: 30px; 
-    margin-top: 10px;
-    font-weight: 600;
-    font-family: 'Spartan', sans-serif;
-    position: relative;
-    left: 100px;
+        color: rgb(2, 110, 2); font-size: 30px; 
+        margin-top: 10px;
+        font-weight: 600;
+        font-family: 'Spartan', sans-serif;
+        position: relative;
+        left: 100px;
     }
 
     .isologo{
-    margin-top: 1px;
-    margin-left: 60px;
-    color: rgb(0, 172, 0); 
-    font-size: 16px; 
-    font-weight: 400;
-    font-family: 'Spartan', sans-serif;
-    position: relative;
-    left: 70px;
+        margin-top: 1px;
+        margin-left: 60px;
+        color: rgb(0, 172, 0); 
+        font-size: 16px; 
+        font-weight: 400;
+        font-family: 'Spartan', sans-serif;
+        position: relative;
+        left: 70px;
     }
 
 
     #escudo{
-    display: block;
-    height: 80px;
-    position: absolute;
-    left: -80px;
-    top: 0px;
+        display: block;
+        height: 80px;
+        position: absolute;
+        left: -80px;
+        top: 0px;
+    }
+
+    #escudo: hover{height 2000px;
+
     }
     
     /* navegacion mobile */
@@ -108,29 +117,25 @@ header{
     body{
         width: 100%;
         
+        
+        
 
     }
 
     main{
 
         width: 100%;
-        height: 1000px;
+        height: 800px;
+        position: absolute;
+        
+        
+
+        
+        
 
 
     }
 
-    h2 {
-        color: rgb(0, 172, 0); 
-        font-size: 28px; 
-        font-weight: 400;
-        font-family: 'Spartan', sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      
-    
-    }
-    
     .menu{
         height: 400px;
         width: 100%;
@@ -169,28 +174,45 @@ header{
    
     
 
-
-
     .slante{
-    background-color: rgba(2, 110, 2, 0.78);
-    width: 100%;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
+        background-color: rgba(2, 110, 2, 0.78);
+        width: 100%;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 100px;
+   
+        
     }
 
     .slante h2{
-    color: rgb(240, 160, 11); 
-    font-size: 14px; 
-    font-weight: 600;
-    font-family: 'Spartan', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+        color: rgb(240, 160, 11); 
+        font-size: 16px; 
+        font-weight: 600;
+        font-family: 'Spartan', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .slante :hover{
+        background-color: rgb(240, 160, 11); 
+        width: 110%;
+        height: 55px;
+        transform: scale(1.3,1.3);
+
+    }
+
+    .slante h2:hover {
+        
+        color: rgba(2, 110, 2, 0.78);
+        
+        
+        
     }
 
     h2 {
@@ -201,6 +223,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 10px;
       
     
     }
@@ -208,7 +231,7 @@ header{
     h3{
         color: black;
         font-size: 14px ;
-        font: family: 'Roboto', sans-serif;
+        font-style: 'Roboto', sans-serif;
     
     }
     
@@ -218,39 +241,66 @@ header{
         font-family: 'Roboto', sans-serif;  
     }
 
-    
-
+     
     .contenedorfotos{
-
-        width: 100%;
         position: relative;
+        background-color: rgba(189, 189, 89, 0.658);
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
 
+    .contenedorfotos p{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        color: rgba(2, 110, 2);
+        position: relative;
+        padding: 50px;
+        
     }
     
-
-
     #imagenSocios{
 
         position: relative;
-        width:80%;
+        width:45%;
+        height: 45%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 15px;
 
     }
+  
+
+    .fotosportada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    
+
 
     /* GALERIA DE FOTOS */ 
 
     div img{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
+        
+    }
+
+    div img :hover{
+        transform: scale(1.2,1.2);
     }
 
    
+    
     
     .contenedor_galeria{
             width: 100%;
@@ -278,11 +328,19 @@ header{
         grid-area: a1;
         width: 90%;
         height: 90%;
+        
 
        
 
         
     }
+
+    #foto1:hover{
+        transform: scale(1.1,1.1);
+    }
+
+
+
 
     #foto2{
         
@@ -290,7 +348,12 @@ header{
         width: 90%;
         height: 90%;
        
-    }  
+    } 
+    
+    #foto2:hover{
+        transform: scale(1.1,1.1);
+    }
+
                 
     #foto3{
         
@@ -301,6 +364,12 @@ header{
 
     }
 
+    #foto3:hover{
+        transform: scale(1.1,1.1);
+    }
+
+
+
     #foto4{
         grid-area: a4;
         width: 90%;
@@ -308,12 +377,20 @@ header{
        
     }
 
+    #foto4:hover{
+        transform: scale(1.1,1.1);
+    }
+
+
     #foto5{
         grid-area: a5;
         width: 90%;
         height: 90%;
        
     }
+
+     
+
             
     #foto6{
         grid-area: a6;
@@ -321,6 +398,11 @@ header{
         height: 90%;
        
     }
+
+    #foto6:hover{
+        transform: scale(1.1,1.1);
+    }
+
    
 
 
@@ -341,7 +423,7 @@ header{
 
     fieldset{
         position: relative;
-        background-color: rgba(2, 110, 2, 0.096);
+        background-color: rgba(189, 189, 89, 0.658);
         font-size: 16px;
         font-family: 'Roboto', sans-serif;
         color: rgb(2, 110, 2,);
@@ -416,7 +498,7 @@ header{
 
         margin: 5px;
         width: 90%;
-        background-color: rgba(2, 110, 2, 0.096);
+        background-color: rgba(189, 189, 89, 0.658);
         color: black;
         font-size: 12px ;
         font-family: 'Roboto', sans-serif;  
@@ -425,10 +507,10 @@ header{
 
 
         
- /* Mobile FOOTER */
+  /* Mobile FOOTER */
 
         
-     footer{
+    footer{
             
         height: 100px;
         width: 100%;
@@ -440,6 +522,8 @@ header{
 
     
     
+
+
     .textofooter{
         text-align: center;
         color: white;
@@ -452,13 +536,18 @@ header{
 
 }
 
+
+
 /* Mobile FIN */
+
+
+
 
 
 
 /* Tablet*/
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 580px){
 
     /* logo */
 
@@ -501,18 +590,52 @@ header{
         
     }
 
-    
+   
     h2 {
-        color: rgb(0, 172, 0); 
+        color:rgba(2, 110, 2); 
         font-size: 28px; 
-        font-weight: 600;
-        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 20px;
       
     
     }
+     /* Tablet Main
+
+    .tema {
+    
+        color: white; 
+        background-color: rgba(0, 0, 0, 0.233);
+        font-size: 28px; 
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
+        position: relative;
+        
+        
+    }
+     */
+
+    .tema {
+    
+        color:rgba(2, 110, 2); 
+        background-color: rgba(189, 189, 89, 0.658);
+        font-size: 32px; 
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
+        position: absolute;
+        padding: 20px;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        
+    }
+ 
+ 
     
 
     /* Tablet Main */
@@ -524,6 +647,7 @@ header{
         height: 50px;
         display: flex;
         justify-content: center; 
+        
         
         
     
@@ -559,6 +683,8 @@ header{
       
     }
 
+     /* GALERIA DE FOTOS
+
     main{
         height: 1000px;
         position: relative;
@@ -569,24 +695,112 @@ header{
         background-attachment: fixed;
     }
 
-    body{
+    */ 
+  body{
         width: 100%;
-        height: 800px;
+        height: 100%;
+        
 
     }
-   
-   
-    .contenedorfotos{
+
+    /* 
+
+    main{
+        height: 1000px;
+        position: relative;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.377);
+
+        background-image: url(./imagenes/fahypuertafiltro.jpeg);
+        background-position: center center; 
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+
+    */ 
+    
+    main{
 
         width: 100%;
-        height: 800px;
+        height: 1050px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./imagenes/fahypuertafiltro.jpeg);
+        background-position: center center; 
+        background-size: cover;
+        background-attachment: fixed;
+
+
+    }
+
+   
+    .tema {
+    
+        color:rgba(2, 110, 2); 
+        background-color: rgba(189, 189, 89, 0.658);
+        font-size: 32px; 
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
+        position: absolute;
+        padding: 10px;
+        top: 250px;
+        
+        
+    }
+ 
+    
+    .contenedorfotos{
         position: relative;
+        background-color: rgba(189, 189, 89, 0.658);
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedorfotos p{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        color: rgba(2, 110, 2);
+        position: relative;
+        padding: 50px;
+        
+    }
+    
+    #imagenSocios{
+
+        position: relative;
+        width:45%;
+        height: 45%;
+        display: flex;
+        padding: 15px;
+
+    }
+  
+
+    .fotosportada{
         display: flex;
         justify-content: center;
         align-items: center;
-
+        height: 100%;
+        width: 100%;
+        
     }
 
+
+  
+    .fotosportada img {
+    
+        height: 90%;
+        position: relative;
+       
+    }
+  
     /* GALERIA DE FOTOS */ 
 
     div img{
@@ -605,13 +819,10 @@ header{
             justify-items: center;
             align-items: center;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:     "a1"
-                                    "a2"
-                                    "a3"
-                                    "a4"
-                                    "a6"
-                                    "a5";
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:     "a1 a2"
+                                    "a3 a4"
+                                    "a5 a6";
                                     
     }
 
@@ -666,6 +877,32 @@ header{
     
     }
 
+   
+    
+    #foto1:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto2:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto3:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto4:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto5:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto6:hover{
+        transform: scale(1.1,1.1);
+    }
+
 
     
 
@@ -690,8 +927,8 @@ header{
     font-size: 16px ;
     font-family: 'Roboto', sans-serif;  
     padding: 10px;
-    background-color: rgba(2, 110, 2, 0.191);
-    }
+    background-color: rgba(189, 189, 89, 0.658);
+}
 
 
     fieldset{
@@ -699,7 +936,7 @@ header{
         font-size: 24px;
         font-family: 'Roboto', sans-serif;
         color: rgb(2, 110, 2,);
-        padding: 5px;
+        padding: 10px;
 
 
     }
@@ -728,6 +965,7 @@ header{
         font-size: 16px ;
         font-family: 'Roboto', sans-serif;  
         padding: 10px;   
+        background-color: rgba(255, 255, 255, 0.589); 
     }
 
          
@@ -752,6 +990,24 @@ header{
         margin-top: 0px;
         margin-left: 5px;
         padding: 10px;
+    }
+
+    
+    .slante :hover{
+        background-color: rgb(240, 160, 11); 
+        width: 110%;
+        height: 55px;
+        translate: 40px;
+        transform: scale(1.3,1.3);
+
+    }
+
+    .slante h2:hover {
+        
+        color: rgba(2, 110, 2, 0.78);
+        
+        
+        
     }
 
     /* FOOTER tablet */
@@ -784,13 +1040,14 @@ header{
         color: white;
         position: relative;
         font-size: 12px ;
-        font-family: 'Roboto', sans-serif; 
+        font-style: 'Roboto', sans-serif; 
         padding: 30px;
           
     }
 
 
 }
+
 /* Fin Tablet*/
 
 
@@ -798,19 +1055,9 @@ header{
 /* broser*/
 
 @media only screen and (min-width: 992px) {
-
-
-        
-    .tema {
     
-        color: rgb(2, 100, 2); 
-        font-size: 28px; 
-        font-weight: 400;
-        font-family: 'Spartan', sans-serif;
-        position: relative;
-        
-        
-    }
+    
+   
         
 
     /* logo */
@@ -856,13 +1103,14 @@ header{
 
     
     h2 {
-        color: rgb(0, 172, 0); 
+        color:rgba(2, 110, 2); 
         font-size: 32px; 
-        font-weight: 600;
-        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 20px;
       
     
     }
@@ -904,7 +1152,7 @@ header{
     .itemMenu{
         text-decoration: none;
         font-size: 24px;
-        font-family: 'Roboto', sans-serif;
+        font-style: 'Roboto', sans-serif;
         color: white;
         padding: 10px;
         
@@ -938,21 +1186,67 @@ header{
     main{
 
         width: 100%;
-        height: 800px;
+        height: 1050px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./imagenes/fahypuertafiltro.jpeg);
+        background-position: center center; 
+        background-size: cover;
+        background-attachment: fixed;
 
 
     }
 
    
+    .tema {
+    
+        color:rgba(2, 110, 2); 
+        background-color: rgba(189, 189, 89, 0.658);
+        font-size: 32px; 
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
+        position: absolute;
+        padding: 10px;
+        top: 250px;
+        
+
+        
+        
+    }
  
     
     .contenedorfotos{
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.315);
-        width: 100%;
+        position: relative;
+        background-color: rgba(189, 189, 89, 0.658);
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedorfotos p{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        color: rgba(2, 110, 2);
+        position: relative;
+        padding: 50px;
+        
     }
     
+    #imagenSocios{
 
+        position: relative;
+        width:45%;
+        height: 45%;
+        display: flex;
+        padding: 15px;
+
+    }
+  
 
     .fotosportada{
         display: flex;
@@ -962,7 +1256,8 @@ header{
         width: 100%;
         
     }
-    
+
+
   
     .fotosportada img {
     
@@ -994,29 +1289,31 @@ header{
   
     .contenedor_galeria{
         width: 100%;
-        height: 1000px;
+        height: 900px;
         display: grid;
-        column-gap: 10px;
-        row-gap: 10px;
+        
         justify-items: center;
         align-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:     "a1 a1 a4"
-                                 "a3 a6 a5"
-                                 "a1 a3 a2"
-                                 "a6 a4 a6";
+      
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a1 a2 a3"
+                                "a4 a5 a6"
+                                ;
+                                        
                                 
     }
 
 
     #foto1{    
-    grid-area: a1;
+        grid-area: a1;
+        
     
     }
 
     #foto2 {
         grid-area: a2;
+        
         
     }  
                 
@@ -1042,6 +1339,32 @@ header{
         grid-area: a6;
         
     }
+
+    
+    #foto1:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto2:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto3:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto4:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto5:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    #foto6:hover{
+        transform: scale(1.1,1.1);
+    }
+
             
  
 
@@ -1072,6 +1395,25 @@ header{
         padding: 10px;
     }
 
+    
+    .slante :hover{
+        background-color: rgb(240, 160, 11); 
+        width: 110%;
+        height: 55px;
+        translate: 40px;
+        transform: scale(1.3,1.3);
+
+    }
+
+    .slante h2:hover {
+        
+        color: rgba(2, 110, 2, 0.78);
+        
+        
+        
+    }
+
+/* FORM BROSER */
 
     form{
         margin: 30px;
@@ -1089,9 +1431,9 @@ header{
     color: black;
     font-size: 16px ;
     font-family: 'Roboto', sans-serif;  
-    padding: 10px;
-    background-color: rgba(2, 110, 2, 0.191);
-    }
+    padding: 30px;
+    background-color: rgba(189, 189, 89, 0.658);
+}
 
 
     fieldset{
@@ -1100,6 +1442,8 @@ header{
         font-family: 'Roboto', sans-serif;
         color: rgb(2, 110, 2,);
         padding: 5px;
+
+
 
 
     }
@@ -1127,7 +1471,8 @@ header{
         color: black;
         font-size: 16px ;
         font-family: 'Roboto', sans-serif;  
-        padding: 10px;   
+        padding: 10px;  
+        background-color: rgba(255, 255, 255, 0.589); 
     }
 
 
@@ -1150,7 +1495,7 @@ header{
         width: 100%;
         background-color: rgb(2, 110, 2);
         bottom: 0;
-        position: fixed;
+        position: relative;
     
     }
 
@@ -1160,7 +1505,7 @@ header{
         text-align: center;
         color: white;
         position: relative;
-        font-size: 12px ;
+        font-size: 18px ;
         font-family: 'Roboto', sans-serif; 
         padding: 30px;
           
