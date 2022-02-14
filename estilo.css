@@ -43,7 +43,8 @@ header {
   background-color: #16026e;
   align-items: center;
   justify-content: center;
-  padding: 5px 20px 5px 20px; }
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px; }
 
 /* MOBILE mediaq*/
 @media only screen and (max-width: 580px) {
@@ -56,7 +57,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px; }
+    margin: 10px;
+    text-decoration: none; }
   h3 {
     color: black;
     font-size: 14px;
@@ -64,7 +66,8 @@ header {
   p {
     color: black;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
   /* logo mobile */
   header {
     width: 100%;
@@ -106,6 +109,8 @@ header {
     flex-direction: column;
     background-attachment: fixed;
     text-decoration: none; }
+    .menu .liMenuNavbar {
+      color: rgba(231, 219, 219, 0); }
     .menu .itemMenu {
       text-decoration: none;
       font-size: 24px;
@@ -115,32 +120,61 @@ header {
       display: flex;
       align-items: center;
       justify-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      text-decoration: none; }
     .menu .itemMenu:hover {
       text-decoration: none;
       display: flex;
       background-color: #026e02;
-      text-decoration: none; }
+      text-decoration: none;
+      border-radius: 10px; }
   main {
     width: 100%;
     height: 800px;
     position: absolute; }
+    main .contenedorfotos {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+    main .contenedorfotos p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      color: #026e02;
+      position: relative;
+      padding: 50px; }
     main #imagenSocios {
       position: relative;
       width: 45%;
       height: 45%;
       display: flex;
       padding: 15px; }
+    main .fotosportada {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+    main #imagenSocios {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      padding: 15px; }
     main .container {
       position: relative;
-      background-color: rgba(2, 110, 2, 0.78);
+      background-color: rgba(189, 189, 89, 0.658);
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      top: 30px;
       flex-wrap: wrap;
-      overflow: scroll; }
+      overflow: scroll;
+      border-radius: 10px; }
       main .container p {
         font-family: 'Times New Roman', Times, serif;
         font-size: 16px;
@@ -171,7 +205,7 @@ header {
       background-color: #f0a00b;
       width: 110%;
       height: 55px;
-      transform: scale(1.3, 1.3); }
+      transform: scale(1.1, 1.1); }
   .fotosportada {
     display: flex;
     justify-content: center;
@@ -427,8 +461,8 @@ header {
     padding: 50px; }
   #imagenSocios {
     position: relative;
-    width: 45%;
-    height: 45%;
+    width: 300px;
+    height: 300px;
     display: flex;
     padding: 15px; }
   .fotosportada {
@@ -638,22 +672,31 @@ header {
         display: flex;
         justify-content: center;
         align-items: center; }
-  /* 
-
-    main{
-        height: 1000px;
-        position: relative;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.377);
-
-        background-image: url(./imagenes/fahypuertafiltro.jpeg);
-        background-position: center center; 
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-
-    */
+  /* Tablet Main */
+  .navbar {
+    background-color: #026e02;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center; }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .menu li {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center; }
+  .itemMenu {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px; }
+  body {
+    width: 100%;
+    height: 100%; }
   main {
     width: 100%;
     height: 1050px;
@@ -664,17 +707,7 @@ header {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed; }
-  .tema {
-    color: #026e02;
-    background-color: rgba(189, 189, 89, 0.658);
-    font-size: 32px;
-    font-weight: 400;
-    font-style: 'Spartan', sans-serif;
-    position: absolute;
-    padding: 10px;
-    top: 300px; }
   .contenedorfotos {
-    box-shadow: 0px, 8px, 5px black;
     position: relative;
     background-color: rgba(189, 189, 89, 0.658);
     width: 70%;
@@ -684,15 +717,15 @@ header {
     justify-content: center;
     flex-wrap: wrap; }
   .contenedorfotos p {
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     color: #026e02;
     position: relative;
     padding: 50px; }
   #imagenSocios {
     position: relative;
-    width: 45%;
-    height: 45%;
+    width: 300px;
+    height: 300px;
     display: flex;
     padding: 15px; }
   .fotosportada {
@@ -704,22 +737,11 @@ header {
   .fotosportada img {
     height: 90%;
     position: relative; }
-  /* 
-
-     degrade (no me convence todavia)
-    .mask{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to right,rgba(2, 110, 2, 0.342) , 
-        rgba(240, 160, 11, 0.342) )
-    }
-    
-     */
   /* GALERIA DE FOTOS no logre aplicar grid*/
   div img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    border-radius: 10px; }
   .contenedor_galeria {
     width: 100%;
     height: 900px;
@@ -762,7 +784,8 @@ header {
     justify-content: left;
     position: fixed;
     bottom: 110px;
-    left: 0px; }
+    left: 0px;
+    border-radius: 5px; }
     .slante .slante h2 {
       color: #f0a00b;
       font-size: 150%;
@@ -774,10 +797,13 @@ header {
       padding: 10px; }
     .slante .slante :hover {
       background-color: #f0a00b;
-      translate: 0px;
-      transform: scale(1.1, 1.1); }
+      translate: 100px;
+      transform: scale(1.2, 1.2);
+      border-radius: 5px; }
   .slante h2:hover {
-    color: rgba(2, 110, 2, 0.78); }
+    color: rgba(2, 110, 2, 0.78);
+    transform: scale(1.2, 1.2);
+    border-radius: 5px; }
   /* FORM BROSER */
   form {
     color: black;
@@ -844,7 +870,17 @@ header {
     }
     
     */
+  .contenedorfotos {
+    position: relative;
+    background-color: rgba(189, 189, 89, 0.658);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
   .container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center; }
