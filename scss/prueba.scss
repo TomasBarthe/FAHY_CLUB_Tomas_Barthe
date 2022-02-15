@@ -79,6 +79,9 @@ header{
     align-items: center;
     justify-content: center;
     padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    marker: $color_naranja;
+
 
 }
 
@@ -110,6 +113,7 @@ header{
         align-items: center;
         justify-content: center;
         margin: 10px;
+        text-decoration: none;
       
     
     }
@@ -124,7 +128,8 @@ header{
     p{
         color: black;
         font-size: 12px ;
-        font-family: 'Roboto', sans-serif;  
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;  
     }
 
     
@@ -174,13 +179,15 @@ header{
     
     body{
         width: 100%;
-        
+      
+           
+
         
         
 
     }
 
-   
+    
 
     .menu{
         height: 400px;
@@ -194,8 +201,17 @@ header{
         background-attachment: fixed;
         text-decoration: none;
         
-        .itemMenu{
-            text-decoration: none;
+
+            .liMenuNavbar{
+                color: rgba(231, 219, 219, 0);
+                
+                   
+            }
+
+
+            
+        
+            .itemMenu{
             font-size: 24px;
             font-family: 'Roboto', sans-serif;
             color: rgb(249, 252, 249);
@@ -204,16 +220,20 @@ header{
             align-items: center;
             justify-items: center;
             flex-direction: column;
+            text-decoration: none;
+            
           
         }
     
         .itemMenu:hover{
-            text-decoration: none;
             display: flex;
             background-color: $color_verde;
-            text-decoration: none;
+            border-radius: 10px;
         
         }
+
+        
+        
         
 
 
@@ -225,7 +245,26 @@ header{
         height: 800px;
         position: absolute;
 
+        
+    
+        .contenedorfotos{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
+        .contenedorfotos p{
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: $color_verde;
+            position: relative;
+            padding: 50px;
+            
+        }
         
         #imagenSocios{
 
@@ -236,6 +275,28 @@ header{
             padding: 15px;
 
         }
+  
+
+        .fotosportada{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+
+        
+        #imagenSocios{
+
+            position: relative;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            padding: 15px;
+    
+        }
 
           
         .container{
@@ -245,9 +306,10 @@ header{
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            top: 30px;
             flex-wrap: wrap;
             overflow: scroll;
+            border-radius: 10px;
         
 
             p{
@@ -812,8 +874,8 @@ header{
     #imagenSocios{
 
         position: relative;
-        width:45%;
-        height: 45%;
+        width:300px;
+        height: 300px;
         display: flex;
         padding: 15px;
 
@@ -1204,24 +1266,61 @@ header{
 
    
 
+  /* Tablet Main */
 
-    /* 
 
-    main{
-        height: 1000px;
-        position: relative;
+    .navbar{
+        background-color: $color_verde;
         width: 100%;
-        background: rgba(255, 255, 255, 0.377);
+        height: 60px;
+        display: flex;
+        justify-content: center; 
+        
+        
+        
 
-        background-image: url(./imagenes/fahypuertafiltro.jpeg);
-        background-position: center center; 
-        background-size: cover;
-        background-attachment: fixed;
+    }
+
+
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        
         
     }
 
-    */ 
+    .menu li{
     
+        height: 100%;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        
+
+    }   
+
+
+    .itemMenu{
+        text-decoration: none;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding: 10px;
+    
+    }
+
+
+    body{
+        width: 100%;
+        height: 100%;
+        
+
+    }
+
+
+
     main{
 
         width: 100%;
@@ -1237,56 +1336,41 @@ header{
 
     }
 
-   
-    .tema {
-    
-        color:$color_verde; 
-        background-color: $color_fondo_texto;
-        font-size: 32px; 
-        font-weight: 400;
-        font-style: 'Spartan', sans-serif;
-        position: absolute;
-        padding: 10px;
-        top: 300px;
-        
 
-        
-        
-    }
- 
-    
+
+
     .contenedorfotos{
-        @include sombra;
         position: relative;
         background-color: $color_fondo_texto;
-        width: 70%;
-        height: 70%;
+        width: 400px;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        
     }
 
     .contenedorfotos p{
 
-        font-family: 'Spartan', sans-serif;
+        font-family: 'Times New Roman', Times, serif;
         font-size: 16px;
         color: $color_verde;
         position: relative;
         padding: 50px;
         
     }
-    
+
     #imagenSocios{
 
         position: relative;
-        width:45%;
-        height: 45%;
+        width:300px;
+        height: 300px;
         display: flex;
         padding: 15px;
 
     }
-  
+
 
     .fotosportada{
         display: flex;
@@ -1298,25 +1382,13 @@ header{
     }
 
 
-  
+
     .fotosportada img {
-    
+
         height: 90%;
         position: relative;
-       
-    }
-     /* 
-
-     degrade (no me convence todavia)
-    .mask{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to right,rgba(2, 110, 2, 0.342) , 
-        rgba(240, 160, 11, 0.342) )
-    }
     
-     */
+    }
      
 
     /* GALERIA DE FOTOS no logre aplicar grid*/ 
@@ -1325,6 +1397,8 @@ header{
     div img{
         width: 100%;
         height: 100%;
+        border-radius: 10px;
+
     }
   
     .contenedor_galeria{
@@ -1423,6 +1497,8 @@ header{
         position: fixed;
         bottom: 110px;
         left: 0px;
+        border-radius: 5px;
+
         
         
 
@@ -1441,8 +1517,10 @@ header{
         
         .slante :hover{
             background-color: $color_naranja; 
-            translate: 0px;
-            transform: scale(1.1,1.1);
+            translate: 100px;
+            transform: scale(1.2,1.2);
+            border-radius: 5px;
+
 
         }
 
@@ -1455,6 +1533,10 @@ header{
     .slante h2:hover {
             
         color: $color_verdetras;
+        transform: scale(1.2,1.2);
+        border-radius: 5px;
+
+
         
         
         
@@ -1565,7 +1647,23 @@ header{
     */
 
 
+     
+    
+    .contenedorfotos{
+        position: relative;
+        background-color: $color_fondo_texto;
+        width: 100%;
+        height: 1000%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    
+
     .container{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
