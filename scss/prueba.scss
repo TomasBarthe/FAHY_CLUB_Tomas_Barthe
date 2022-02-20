@@ -80,6 +80,7 @@ header{
     justify-content: center;
     padding: 5px 20px 5px 20px;
     border-radius: 5px;
+    marker: $color_naranja;
 
 
 }
@@ -178,13 +179,29 @@ header{
     
     body{
         width: 100%;
-        
+      
+           
+
         
         
 
     }
 
-   
+    
+    .tema {
+    
+        color: $color_verde; 
+        background-color: $color_fondo_texto;
+        font-size: 24px; 
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
+        position: absolute;
+        padding: 10px;
+        top: 250px;
+
+        
+    }
+
 
     .menu{
         height: 400px;
@@ -208,8 +225,17 @@ header{
 
             
         
-        .itemMenu{
-            text-decoration: none;
+
+            .liMenuNavbar{
+                color: rgba(231, 219, 219, 0);
+                
+                   
+            }
+
+
+            
+        
+            .itemMenu{
             font-size: 24px;
             font-family: 'Roboto', sans-serif;
             color: rgb(249, 252, 249);
@@ -219,18 +245,18 @@ header{
             justify-items: center;
             flex-direction: column;
             text-decoration: none;
-
           
         }
     
         .itemMenu:hover{
-            text-decoration: none; 
             display: flex;
             background-color: $color_verde;
-            text-decoration: none;
             border-radius: 10px;
         
         }
+
+        
+        
         
 
 
@@ -246,12 +272,10 @@ header{
     
         .contenedorfotos{
             position: relative;
-           
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
-
             flex-wrap: wrap;
         }
 
@@ -286,12 +310,6 @@ header{
         }
 
 
-
-
-
-        
-
-
         
         #imagenSocios{
 
@@ -311,7 +329,6 @@ header{
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
             top: 30px;
             flex-wrap: wrap;
             overflow: scroll;
@@ -789,9 +806,10 @@ header{
     .navbar{
         background-color: $color_verde;
         width: 100%;
-        height: 50px;
+        height: 60px;
         display: flex;
         justify-content: center; 
+        align-items: stretch;
         
         
         
@@ -803,6 +821,7 @@ header{
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
        
         
         
@@ -811,9 +830,10 @@ header{
     .menu li{
        
         height: 100%;
-        width: 15%;
+        width: 20%;
         display: flex;
         justify-content: center;
+        
         
     
     }   
@@ -1278,7 +1298,7 @@ header{
     .navbar{
         background-color: $color_verde;
         width: 100%;
-        height: 70px;
+        height: 60px;
         display: flex;
         justify-content: center; 
         
@@ -1292,6 +1312,7 @@ header{
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: stretch;
     
         
         
@@ -1303,6 +1324,7 @@ header{
         width: 15%;
         display: flex;
         justify-content: center;
+        align-items: center;
         
 
     }   
@@ -1348,8 +1370,8 @@ header{
     .contenedorfotos{
         position: relative;
         background-color: $color_fondo_texto;
-        width: 70%;
-        height: 70%;
+        width: 500px;
+        height: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1487,11 +1509,6 @@ header{
     }
 
             
- 
-
-
- 
-
 
     .slante{
         background-color: $color_verdetras;
@@ -1659,7 +1676,7 @@ header{
         position: relative;
         background-color: $color_fondo_texto;
         width: 70%;
-        height: 70%;
+        height: 80%;
         display: flex;
         align-items: center;
         justify-content: center;

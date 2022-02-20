@@ -44,7 +44,8 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5px 20px 5px 20px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  marker: #f0a00b; }
 
 /* MOBILE mediaq*/
 @media only screen and (max-width: 580px) {
@@ -98,6 +99,15 @@ header {
   /* navegacion mobile */
   body {
     width: 100%; }
+  .tema {
+    color: #026e02;
+    background-color: rgba(189, 189, 89, 0.658);
+    font-size: 24px;
+    font-weight: 400;
+    font-style: 'Spartan', sans-serif;
+    position: absolute;
+    padding: 10px;
+    top: 250px; }
   .menu {
     height: 400px;
     width: 100%;
@@ -111,8 +121,9 @@ header {
     text-decoration: none; }
     .menu .liMenuNavbar {
       color: rgba(231, 219, 219, 0); }
+    .menu .liMenuNavbar {
+      color: rgba(231, 219, 219, 0); }
     .menu .itemMenu {
-      text-decoration: none;
       font-size: 24px;
       font-family: 'Roboto', sans-serif;
       color: #f9fcf9;
@@ -123,10 +134,8 @@ header {
       flex-direction: column;
       text-decoration: none; }
     .menu .itemMenu:hover {
-      text-decoration: none;
       display: flex;
       background-color: #026e02;
-      text-decoration: none;
       border-radius: 10px; }
   main {
     width: 100%;
@@ -170,7 +179,6 @@ header {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
       top: 30px;
       flex-wrap: wrap;
       overflow: scroll;
@@ -413,16 +421,18 @@ header {
   .navbar {
     background-color: #026e02;
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: stretch; }
   .menu {
     width: 100%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .menu li {
     height: 100%;
-    width: 15%;
+    width: 20%;
     display: flex;
     justify-content: center; }
   .itemMenu {
@@ -676,18 +686,20 @@ header {
   .navbar {
     background-color: #026e02;
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center; }
   .menu {
     width: 100%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: stretch; }
   .menu li {
     height: 100%;
     width: 15%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .itemMenu {
     text-decoration: none;
     font-size: 22px;
@@ -710,8 +722,8 @@ header {
   .contenedorfotos {
     position: relative;
     background-color: rgba(189, 189, 89, 0.658);
-    width: 70%;
-    height: 70%;
+    width: 500px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -874,7 +886,7 @@ header {
     position: relative;
     background-color: rgba(189, 189, 89, 0.658);
     width: 70%;
-    height: 70%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
