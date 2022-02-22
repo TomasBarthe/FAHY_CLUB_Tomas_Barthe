@@ -99,15 +99,6 @@ header {
   /* navegacion mobile */
   body {
     width: 100%; }
-  .tema {
-    color: #026e02;
-    background-color: rgba(189, 189, 89, 0.658);
-    font-size: 24px;
-    font-weight: 400;
-    font-style: 'Spartan', sans-serif;
-    position: absolute;
-    padding: 10px;
-    top: 250px; }
   .menu {
     height: 400px;
     width: 100%;
@@ -143,35 +134,46 @@ header {
     position: absolute; }
     main .contenedorfotos {
       position: relative;
+      background-color: rgba(189, 189, 89, 0.658);
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
-      flex-wrap: wrap; }
-    main .contenedorfotos p {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 16px;
-      color: #026e02;
-      position: relative;
-      padding: 50px; }
-    main #imagenSocios {
-      position: relative;
-      width: 45%;
-      height: 45%;
-      display: flex;
-      padding: 15px; }
-    main .fotosportada {
-      display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%; }
-    main #imagenSocios {
-      position: relative;
-      width: 250px;
-      height: 250px;
-      display: flex;
-      padding: 15px; }
+      flex-wrap: wrap; }
+      main .contenedorfotos .tema {
+        color: #026e02;
+        background-color: rgba(189, 189, 89, 0.658);
+        font-size: 18px;
+        font-weight: 400;
+        font-style: 'Spartan', sans-serif;
+        position: absolute;
+        padding: 10px;
+        top: 250px; }
+      main .contenedorfotos p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        color: #026e02;
+        position: relative;
+        padding: 50px; }
+      main .contenedorfotos #imagenSocios {
+        position: relative;
+        width: 200px;
+        height: 150px;
+        display: flex;
+        padding: 15px; }
+      main .contenedorfotos .fotosportada {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%; }
+      main .contenedorfotos #imagenSocios {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        padding: 15px; }
     main .container {
       position: relative;
       background-color: rgba(189, 189, 89, 0.658);
@@ -348,6 +350,35 @@ header {
       .container .carousel slide .titulo_slider {
         font-size: 17px;
         color: #f0a00b; }
+  .mje_socio, .mje_visita, .mje_galeria, .mje_error {
+    position: relative;
+    display: flex;
+    color: #16026e;
+    background-color: #f0a00b;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10PX; }
+  .mje_visita {
+    color: white;
+    background-color: #16026e; }
+  .mje_galeria {
+    color: rgba(2, 110, 2, 0.78) background-color #f0a00b;
+    padding-left: 350px; }
+  .contenedor_error {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .mje_error {
+    position: relative;
+    color: rgba(2, 110, 2, 0.78) background-color #f0a00b;
+    padding-left: 350px; }
+  .escudo_error {
+    width: 100px;
+    height: 100px; }
   /* Mobile FOOTER */
   footer {
     height: 100px;
@@ -457,15 +488,15 @@ header {
   .contenedorfotos {
     position: relative;
     background-color: rgba(189, 189, 89, 0.658);
-    width: 70%;
-    height: 70%;
+    width: 500;
+    height: 320;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; }
   .contenedorfotos p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-style: 'Spartan', sans-serif;
+    font-size: 18px;
     color: #026e02;
     position: relative;
     padding: 50px; }
@@ -728,18 +759,17 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; }
-  .contenedorfotos p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: #026e02;
-    position: relative;
-    padding: 50px; }
+    .contenedorfotos .contenedorfotos p {
+      font-style: 'Spartan', sans-serif;
+      font-size: 18px;
+      color: #026e02;
+      position: relative;
+      padding: 40px; }
   #imagenSocios {
     position: relative;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    padding: 15px; }
+    width: 600px;
+    height: 450px;
+    display: flex; }
   .fotosportada {
     display: flex;
     justify-content: center;
@@ -904,20 +934,6 @@ header {
       .container .carousel slide .titulo_slider {
         font-size: 17px;
         color: #f0a00b; }
-  .mje_socio, .mje_visita, .mje_galeria {
-    position: relative;
-    display: flex;
-    color: #16026e;
-    background-color: #f0a00b;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    padding: 10PX; }
-  .mje_visita {
-    color: white;
-    background-color: #16026e; }
-  .mje_galeria {
-    color: rgba(2, 110, 2, 0.78) background-color #f0a00b;
-    padding-left: 350px; }
   footer {
     height: 100px;
     width: 100%;
@@ -979,3 +995,38 @@ footer{
       
 }
 */
+.mje_socio, .mje_visita, .mje_galeria, .mje_error {
+  position: relative;
+  display: flex;
+  color: #16026e;
+  background-color: #f0a00b;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10PX; }
+
+.mje_visita {
+  position: relative;
+  color: white;
+  background-color: #16026e; }
+
+.mje_galeria {
+  color: rgba(2, 110, 2, 0.78) background-color #f0a00b;
+  padding-left: 350px; }
+
+.contenedor_error {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.mje_error {
+  position: relative;
+  color: rgba(2, 110, 2, 0.78) background-color #f0a00b;
+  padding-left: 350px; }
+
+.escudo_error {
+  width: 100px;
+  height: 100px; }

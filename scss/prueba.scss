@@ -187,21 +187,6 @@ header{
 
     }
 
-    
-    .tema {
-    
-        color: $color_verde; 
-        background-color: $color_fondo_texto;
-        font-size: 24px; 
-        font-weight: 400;
-        font-style: 'Spartan', sans-serif;
-        position: absolute;
-        padding: 10px;
-        top: 250px;
-
-        
-    }
-
 
     .menu{
         height: 400px;
@@ -266,60 +251,92 @@ header{
 
         width: 100%;
         height: 800px;
-        position: absolute;
+        position: absolute; 
 
         
-    
+
+
+
         .contenedorfotos{
             position: relative;
+            background-color: $color_fondo_texto;
+
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .contenedorfotos p{
-
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 16px;
-            color: $color_verde;
-            position: relative;
-            padding: 50px;
-            
-        }
-        
-        #imagenSocios{
-
-            position: relative;
-            width:45%;
-            height: 45%;
-            display: flex;
-            padding: 15px;
-
-        }
-  
-
-        .fotosportada{
-            display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
+            flex-wrap: wrap;
+
+
+                
+            .tema {
             
-        }
+                color: $color_verde; 
+                background-color: $color_fondo_texto;
+                font-size: 18px; 
+                font-weight: 400;
+                font-style: 'Spartan', sans-serif;
+                position: absolute;
+                padding: 10px;
+                top: 250px;
 
-
+                
+            }
         
-        #imagenSocios{
 
-            position: relative;
-            width: 250px;
-            height: 250px;
-            display: flex;
-            padding: 15px;
+            p{
+
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 16px;
+                color: $color_verde;
+                position: relative;
+                padding: 50px;
+                
+            }
+
+            #imagenSocios{
+
+                position: relative;
+                width: 200px;
+                height: 150px;
+                display: flex;
+                padding: 15px;
     
+            }
+
+            
+            .fotosportada{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                
+            }
+
+                
+            #imagenSocios{
+
+                position: relative;
+                width: 250px;
+                height: 250px;
+                display: flex;
+                padding: 15px;
+        
+            }
+            
+         
+
+
+            
+
         }
+        
+        
+
+
+      
 
           
         .container{
@@ -660,6 +677,68 @@ header{
 
     }
 
+        
+    .mje_socio{
+        position: relative;
+        display: flex;
+        color: $color_azul;
+        background-color: $color_naranja;
+        font-size: 18px ;
+        font-family: 'Roboto', sans-serif; 
+        padding: 10PX;
+        
+
+    }
+
+    .mje_visita{
+        @extend .mje_socio;
+        color: white;
+        background-color: $color_azul;
+        
+
+    }
+
+    .mje_galeria{
+        @extend .mje_socio;
+        color: $color_verdetras
+        background-color $color_naranja;
+        padding-left: 350px;
+        
+
+    }
+
+
+        
+    .contenedor_error{
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    
+
+    }
+
+    .mje_error{
+        position: relative;
+        @extend .mje_socio;
+        color: $color_verdetras
+        background-color $color_naranja;
+        padding-left: 350px;
+        
+
+    }
+
+    .escudo_error{
+        width: 100px;
+        height: 100px;
+    }
+
+
+
 
 
         
@@ -879,23 +958,26 @@ header{
     .contenedorfotos{
         position: relative;
         background-color: $color_fondo_texto;
-        width: 70%;
-        height: 70%;
+        width: 500;
+        height: 320;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
     }
 
     .contenedorfotos p{
 
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 16px;
+        font-style: 'Spartan', sans-serif;        
+        font-size: 18px;
         color: $color_verde;
         position: relative;
         padding: 50px;
         
     }
+        
+  
     
     #imagenSocios{
 
@@ -1126,6 +1208,10 @@ header{
         transform: scale(1.3,1.3);
 
     }
+
+   
+
+
    
    
 
@@ -1376,26 +1462,27 @@ header{
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
+        .contenedorfotos p{
+            
+            font-style: 'Spartan', sans-serif;
+            font-size: 18px;
+            color: $color_verde;
+            position: relative;
+            padding: 40px;
+            
+        }
         
     }
 
-    .contenedorfotos p{
-
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 16px;
-        color: $color_verde;
-        position: relative;
-        padding: 50px;
-        
-    }
+  
 
     #imagenSocios{
 
         position: relative;
-        width:300px;
-        height: 300px;
+        width:600px;
+        height: 450px;
         display: flex;
-        padding: 15px;
 
     }
 
@@ -1710,40 +1797,7 @@ header{
 
 
 
-    .mje_socio{
-        position: relative;
-        display: flex;
-        color: $color_azul;
-        background-color: $color_naranja;
-        font-size: 24px ;
-        font-family: 'Roboto', sans-serif; 
-        padding: 10PX;
-        
-
-    }
-
-    .mje_visita{
-        @extend .mje_socio;
-        color: white;
-        background-color: $color_azul;
-        
-
-    }
-
-    .mje_galeria{
-        @extend .mje_socio;
-        color: $color_verdetras
-        background-color $color_naranja;
-        padding-left: 350px;
-        
-
-
-
-    }
-
-
-  
-         
+    
     footer{
             
         height: 100px;
@@ -1832,3 +1886,63 @@ footer{
 */
 
     
+
+.mje_socio{
+    position: relative;
+    display: flex;
+    color: $color_azul;
+    background-color: $color_naranja;
+    font-size: 18px ;
+    font-family: 'Roboto', sans-serif; 
+    padding: 10PX;
+    
+
+}
+
+.mje_visita{
+    position: relative;
+    @extend .mje_socio;
+    color: white;
+    background-color: $color_azul;
+    
+
+}
+
+.mje_galeria{
+    @extend .mje_socio;
+    color: $color_verdetras
+    background-color $color_naranja;
+    padding-left: 350px;
+    
+
+}
+
+
+    
+.contenedor_error{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+
+}
+
+.mje_error{
+    position: relative;
+    @extend .mje_socio;
+    color: $color_verdetras
+    background-color $color_naranja;
+    padding-left: 350px;
+    
+
+}
+
+.escudo_error{
+    width: 100px;
+    height: 100px;
+}
